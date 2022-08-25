@@ -1,11 +1,12 @@
+/* eslint-disable react/jsx-no-bind */
 import axios from 'axios';
 import React from 'react';
+import Button from '../Button/Button';
 import DataIntable from '../DataIntable/DataInTable';
 import styles from './Table.module.css';
 
 function Table() {
   const [countries, setCountries] = React.useState([]);
-  console.log(countries);
 
   const getCountries = () => {
     axios
@@ -42,17 +43,24 @@ function Table() {
       <DataIntable country={country} key={country.id} />
     ));
 
-  return (
-    <table className={styles.Table}>
-      <thead>
-        <th>Name</th>
-        <th>Capital</th>
-        <th>Area</th>
-        <th>Currencies</th>
-      </thead>
+  function exportTable() {
+    console.log('cliequei');
+  }
 
-      <tbody>{renderList}</tbody>
-    </table>
+  return (
+    <>
+      <Button exportTable={exportTable} />
+      <table className={styles.Table} id="import-table">
+        <thead>
+          <th>Name</th>
+          <th>Capital</th>
+          <th>Area</th>
+          <th>Currencies</th>
+        </thead>
+
+        <tbody>{renderList}</tbody>
+      </table>
+    </>
   );
 }
 

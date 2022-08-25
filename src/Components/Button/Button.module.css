@@ -1,0 +1,19 @@
+.btn {
+  z-index: 9999;
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(169, 216, 138);
+  color: rgb(247, 243, 241);
+  font-size: medium;
+  font-weight: 600;
+  letter-spacing: 2px;
+  position: sticky;
+  top: 15px;
+  right: 0px;
+
+  box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+
+}

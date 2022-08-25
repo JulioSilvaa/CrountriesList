@@ -7,7 +7,7 @@ table {
 th {
   font-weight: bold;
   color: #808080;
-  font-size: .78rem;
+  font-size: 1rem;
 }
 
 tr:nth-child(even) {
@@ -21,4 +21,11 @@ td {
 
 table, th, td {
   border: 1px solid #000;
+}
+
+carregando {
+  text-align: center;
+  font-size: 2.2em;
+  margin-top: 20%;
+  letter-spacing: 2px;
 }
