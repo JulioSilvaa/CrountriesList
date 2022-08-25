@@ -7,11 +7,15 @@ table {
 th {
   font-weight: bold;
   color: #808080;
-  font-size: .75rem;
+  font-size: .78rem;
 }
 
 tr:nth-child(even) {
   background-color: #ccc
+}
+
+td {
+  margin-left: 2rem;
 }
 
 

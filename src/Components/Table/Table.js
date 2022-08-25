@@ -45,10 +45,10 @@ function Table() {
   return (
     <table className={styles.Table}>
       <thead>
-        <td>Name</td>
-        <td>Capital</td>
-        <td>Area</td>
-        <td>Currencies</td>
+        <th>Name</th>
+        <th>Capital</th>
+        <th>Area</th>
+        <th>Currencies</th>
       </thead>
 
       <tbody>{renderList}</tbody>
