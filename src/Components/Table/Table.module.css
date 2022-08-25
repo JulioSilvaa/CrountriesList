@@ -10,6 +10,11 @@ th {
   font-size: .75rem;
 }
 
+tr:nth-child(even) {
+  background-color: #ccc
+}
+
+
 table, th, td {
   border: 1px solid #000;
 }
