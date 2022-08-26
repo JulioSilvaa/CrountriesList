@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-no-bind */
 import axios from 'axios';
 import React from 'react';
+import * as XLSX from 'xlsx/xlsx.mjs';
 import Button from '../Button/Button';
 import DataIntable from '../DataIntable/DataInTable';
 import styles from './Table.module.css';
@@ -44,7 +45,10 @@ function Table() {
     ));
 
   function exportTable() {
-    console.log('cliequei');
+    const ws = XLSX.utils.aoa_to_sheet(Array(renderList));
+    const wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, 'SheetJS');
+    XLSX.writeFile(wb, 'sheetjs.xlsx');
   }
 
   return (
