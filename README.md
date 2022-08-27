@@ -3,6 +3,7 @@
 O projeto **Countries-List** é um case antigo que recebi e não consegui entregar, e hoje com um pouco mais de experiência eu decidi tentar novamente. tendo em vista que podera fazer parte de uma trabalho pro futuro. Meu mini ERP.
 
 # Imagens do Projeto
+![Captura de tela 2022-08-27 185944](https://user-images.githubusercontent.com/69260762/187049376-548dca99-8acb-425a-bc14-2f109dabf393.png)
 
 # Índice
 
@@ -23,7 +24,7 @@ Se essa versão 1 funcionar bem no debloy, pretendo adicionar a opção de expor
 
 ## 🌎 Como acessar o projeto
 
-- [Link para o projeto na web]()
+- [Link para o projeto na web](https://tablelistforexcel.surge.sh/)
 
 ## 🚀 Tecnologias utilizadas
 
