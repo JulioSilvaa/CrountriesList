@@ -4,6 +4,7 @@ O projeto **Countries-List** é um case antigo que recebi e não consegui entreg
 
 # Imagens do Projeto
 ![Captura de tela 2022-08-27 185944](https://user-images.githubusercontent.com/69260762/187049376-548dca99-8acb-425a-bc14-2f109dabf393.png)
+![Captura de tela 2022-08-27 190402](https://user-images.githubusercontent.com/69260762/187049490-8d356af1-fc29-43fe-beeb-63398c6a8ff5.png)
 
 # Índice
 
