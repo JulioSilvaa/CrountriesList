@@ -2,19 +2,24 @@
 import axios from 'axios';
 import React from 'react';
 import * as XLSX from 'xlsx/xlsx.mjs';
+import { BaseUrl } from '../../Constants/BaseUrl';
 import Button from '../Button/Button';
 import DataIntable from '../DataIntable/DataInTable';
-import styles from './Table.module.css';
 import Header from '../Header/Header';
+import Spinner from '../Spinner/Spinner';
+import styles from './Table.module.css';
 
 function Table() {
   const [countries, setCountries] = React.useState([]);
+  const [loading, setLoading] = React.useState(false);
 
   const getCountries = () => {
+    setLoading(true);
     axios
-      .get('https://restcountries.com/v3.1/all')
+      .get(`${BaseUrl}`)
       .then((res) => {
         setCountries(res.data);
+        setLoading(false);
       })
       .catch((err) => {
         console.log(err);
@@ -25,6 +30,7 @@ function Table() {
     getCountries();
   }, []);
 
+  // gearador de ID aleatótio
   function addIdinElement() {
     const id = Math.floor(Date.now() * Math.random()).toString(36);
     return id;
@@ -39,20 +45,21 @@ function Table() {
     newListTheElementWithId.push(elementWithId);
   }
 
+  // mapeando os dados para renderizar o componente na tabela
   const renderList =
     newListTheElementWithId &&
     newListTheElementWithId.map((country) => (
       <DataIntable country={country} key={country.id} />
     ));
 
+  // função que exporta a tabela para o Excel
   function exportTable() {
     const table = document.getElementById('exportTable');
     const wb = XLSX.utils.table_to_book(table);
-    // XLSX.utils.book_append_sheet(wb, 'SheetJS');
     XLSX.writeFile(wb, 'sheetjs.xlsx');
-
-    console.log(wb);
   }
+
+  if (loading) return <Spinner />;
 
   return (
     <>
