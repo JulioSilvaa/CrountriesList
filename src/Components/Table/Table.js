@@ -5,6 +5,7 @@ import * as XLSX from 'xlsx/xlsx.mjs';
 import Button from '../Button/Button';
 import DataIntable from '../DataIntable/DataInTable';
 import styles from './Table.module.css';
+import Header from '../Header/Header';
 
 function Table() {
   const [countries, setCountries] = React.useState([]);
@@ -45,24 +46,26 @@ function Table() {
     ));
 
   function exportTable() {
-    const ws = XLSX.utils.aoa_to_sheet(Array(renderList));
-    const wb = XLSX.utils.book_new();
-    XLSX.utils.book_append_sheet(wb, ws, 'SheetJS');
+    const table = document.getElementById('exportTable');
+    const wb = XLSX.utils.table_to_book(table);
+    // XLSX.utils.book_append_sheet(wb, 'SheetJS');
     XLSX.writeFile(wb, 'sheetjs.xlsx');
+
+    console.log(wb);
   }
 
   return (
     <>
       <Button exportTable={exportTable} />
-      <table className={styles.Table} id="import-table">
+      <Header />
+      <table className={styles.Table} id="exportTable">
         <thead>
           <th>Name</th>
           <th>Capital</th>
           <th>Area</th>
           <th>Currencies</th>
         </thead>
-
-        <tbody>{renderList}</tbody>
+        {renderList}
       </table>
     </>
   );
