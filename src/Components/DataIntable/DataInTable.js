@@ -14,12 +14,14 @@ function DataIntable({ country }) {
   }
 
   return (
-    <tr>
-      <td>{country.name.common}</td>
-      <td>{country.capital}</td>
-      <td>{country.area}</td>
-      <td>{currentKeys.map((item) => item)}</td>
-    </tr>
+    <tbody>
+      <tr>
+        <td>{country.name.common}</td>
+        <td>{country.capital}</td>
+        <td>{country.area}</td>
+        <td>{currentKeys.map((item) => item)}</td>
+      </tr>
+    </tbody>
   );
 }
 
