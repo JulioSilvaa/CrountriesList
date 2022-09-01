@@ -1,6 +1,6 @@
 # Countries List
 
-O projeto **Countries-List** é um case antigo que recebi e não consegui entregar, e hoje com um pouco mais de experiência eu decidi tentar novamente. tendo em vista que podera fazer parte de uma trabalho pro futuro. Meu mini ERP.
+O projeto **Countries-List** é um case antigo que recebi, onde o maior desafio durante a execução foi trabalhar com os dados da API e exportar o arquivo para excel pois foi a primeira vez que fiz algo do tipo.
 
 # Imagens do Projeto
 ![Captura de tela 2022-08-27 185944](https://user-images.githubusercontent.com/69260762/187049376-548dca99-8acb-425a-bc14-2f109dabf393.png)
