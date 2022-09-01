@@ -1,6 +1,6 @@
 # Countries List
 
-O projeto **Countries-List** é um case antigo que recebi, onde o maior desafio durante a execução foi trabalhar com os dados da API e exportar o arquivo para excel pois foi a primeira vez que fiz algo do tipo.
+O projeto **Countries-List** é um case antigo que recebi, onde o maior desafio durante a execução foi trabalhar com os dados da API e exportar o arquivo para uma planilha do excel pois foi a primeira vez que fiz algo do tipo.
 
 # Imagens do Projeto
 ![Captura de tela 2022-08-27 185944](https://user-images.githubusercontent.com/69260762/187049376-548dca99-8acb-425a-bc14-2f109dabf393.png)
@@ -17,7 +17,7 @@ O projeto **Countries-List** é um case antigo que recebi, onde o maior desafio 
 
 ## 🖋 Descrição do projeto
 
-## Odesafio que envolve esse projeto é consumir uma lista de dados de uma API, mostar na tela, e adicionar a possibilidade de exportar a tabela para o Excel como arquivo EXLS.
+## O desafio que envolve esse projeto era consumir uma lista de dados de uma API, mostrar os dados em forma de tabela, e adicionar a possibilidade de exportar a tabela para o Excel como arquivo EXLS.
 
 ## 🖋 Futuras Alterações
 
